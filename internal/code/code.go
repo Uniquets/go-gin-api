@@ -15,6 +15,7 @@ type Failure struct {
 	Message string `json:"message"` // 描述信息
 }
 
+
 const (
 	ServerError        = 10101
 	TooManyRequests    = 10102
