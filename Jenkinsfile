@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('登录docker') {
             steps {
-                withCredentials([usernamePassword(credentialsId: '79a0ae06-c977-4a5b-97a0-c26f4eb79f3f', passwordVariable: 'ts1170998607!', usernameVariable: 'uniquets')]) {
+                withCredentials([usernamePassword(credentialsId: '79a0ae06-c977-4a5b-97a0-c26f4eb79f3f', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
                     sh "docker login --username=${USERNAME} --password=${PASSWORD}"
                 }
             }
