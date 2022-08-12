@@ -11,7 +11,7 @@ pipeline {
         stage('登录docker') {
             steps {
                 withCredentials([usernamePassword(credentialsId: '79a0ae06-c977-4a5b-97a0-c26f4eb79f3f', passwordVariable: 'ts1170998607!', usernameVariable: 'uniquets')]) {
-                    sh "docker login docker服务器 --username=${USERNAME} --password=${PASSWORD}"
+                    sh "docker login --username=${USERNAME} --password=${PASSWORD}"
                 }
             }
         }
